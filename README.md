@@ -73,7 +73,8 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      "(format : xxxx xx xx)"
         * Input: "例如 : 2018 10 23"
         * state : allScore
-            * reply: 輸入日期格式錯誤或該日期沒有比賽:
+            * reply: 
+                     輸入日期格式錯誤或該日期沒有比賽:
                      "your chosen day had no game"
                      "please enter another day again!"
 
@@ -86,7 +87,8 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      "Please enter the name of home team(the rear team show as above result) to get the game scoreboard :"
         * Input: "例如 : Red Sox" (需要輸入的隊伍名稱為上面比賽結果中的主隊"Red Sox")
         * state : scoreBoard
-            * Reply: 若輸入的隊伍名稱不是主隊或隊伍名稱錯誤：
+            * Reply: 
+                     若輸入的隊伍名稱不是主隊或隊伍名稱錯誤：
                      "your entered home team name is false"
                      "please reenter again!"
 
@@ -95,7 +97,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      "this is the scoreboard of a team you choose :"
 
                      例:
-                     
+
                      Inning 1   2   3   4   5   6   7   8   9   F
                      Away   0   1   1   0   1   0   1   0   0   4
                      Home   2   0   1   0   2   0   3   0   0   8
@@ -184,7 +186,8 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      "(format : xxxx xx xx)"
         * Input: "例如 : 2018 10 23"
         * state: allScorebox
-            * Reply: 輸入日期格式錯誤或該日期沒有比賽:
+            * Reply: 
+                     輸入日期格式錯誤或該日期沒有比賽:
                      "your chosen day had no game"
                      "please enter another day again!"
 
@@ -197,7 +200,8 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      "Please enter the name of home team(the rear team show as above result) to get the game scoreboard :"
         * Input: "例如 : Red Sox" (需要輸入的隊伍名稱為上面比賽結果中的主隊"Red Sox")
         * state： scoreBoardbox
-            * Reply: 若輸入的隊伍名稱不是主隊或隊伍名稱錯誤：
+            * Reply: 
+                     若輸入的隊伍名稱不是主隊或隊伍名稱錯誤：
                      "your entered home team name is false"
                      "please reenter again!"
 
