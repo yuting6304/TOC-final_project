@@ -21,7 +21,6 @@ import mlbgame.object
 
 
 GRAPH_URL = "https://graph.facebook.com/v2.6"
-ACCESS_TOKEN = ""
 
 # txt = ''
 judgeVar = 0
@@ -216,6 +215,9 @@ def isHomeTeamCorrect(instr, homeTeam):
     global HTeam
     global ATeam
 
+    HTeam = ''
+    ATeam = ''
+
     teamVar = 0
     
     lensplout = len(lioutput)
@@ -224,7 +226,7 @@ def isHomeTeamCorrect(instr, homeTeam):
     while i < lensplout:
         if(homeTeam == str(lioutput[i][4:len(lioutput[i])-3])):
             HTeam = str(lioutput[i][4:len(lioutput[i])-3])
-            ATeam = str(lioutput[i-1][4:len(lioutput[i-1])-3])
+            ATeam = str(lioutput[i-1][0:len(lioutput[i-1])-3])
             teamVar = 1
             break
         i = i + 2
@@ -355,6 +357,8 @@ def pitcherWL(instr):
 
 def homePlayer(instr):
     output = ''
+    global HTeam
+    global ATeam
     strli = []
     strli = instr.split(' ', 3)
 
@@ -499,6 +503,8 @@ def PitcherBOX(instr, mode):
 
 def HitterBOX(instr, mode):
     output = ''
+    global HTeam
+    global ATeam
     strli = []
     strli = instr.split(' ', 3)
 
@@ -521,7 +527,6 @@ def HitterBOX(instr, mode):
     SO = 0
     LOB = 0
 
-    mode = 1
     # choose to list home hitter box
     if(mode == 1):
         output = output + HTeam
@@ -567,37 +572,37 @@ def HitterBOX(instr, mode):
         output = output + ATeam
         output = output + "'s Hitter :\n"
         i = 0
-        while(i < len(data['home_batting'])):
-            output = output + data['home_batting'][i]['name_display_first_last']
+        while(i < len(data['away_batting'])):
+            output = output + data['away_batting'][i]['name_display_first_last']
             output = output + ' :\n'
             output = output + 'AB\tR\tH\tRBI\tBB\tSO\tLOB\tAVG\tOPS\n'
 
-            output = output + data['home_batting'][i]['ab']
+            output = output + data['away_batting'][i]['ab']
             output = output + '\t'
-            output = output + data['home_batting'][i]['r']
+            output = output + data['away_batting'][i]['r']
             output = output + '\t'
-            output = output + data['home_batting'][i]['h']
+            output = output + data['away_batting'][i]['h']
             output = output + '\t'
-            output = output + data['home_batting'][i]['rbi']
+            output = output + data['away_batting'][i]['rbi']
             output = output + '\t'
-            output = output + data['home_batting'][i]['bb']
+            output = output + data['away_batting'][i]['bb']
             output = output + '\t'
-            output = output + data['home_batting'][i]['so']
+            output = output + data['away_batting'][i]['so']
             output = output + '\t'
-            output = output + data['home_batting'][i]['lob']
+            output = output + data['away_batting'][i]['lob']
             output = output + '\t'
-            output = output + data['home_batting'][i]['avg']
+            output = output + data['away_batting'][i]['avg']
             output = output + '\t'
-            output = output + data['home_batting'][i]['ops']
+            output = output + data['away_batting'][i]['ops']
             output = output + '\n'
 
-            AB = AB + int(data['home_batting'][i]['ab'])
-            R = R + int(data['home_batting'][i]['r'])
-            H = H + int(data['home_batting'][i]['h'])
-            RBI = RBI + int(data['home_batting'][i]['rbi'])
-            BB = BB + int(data['home_batting'][i]['bb'])
-            SO = SO + int(data['home_batting'][i]['so'])
-            LOB = LOB + int(data['home_batting'][i]['lob'])
+            AB = AB + int(data['away_batting'][i]['ab'])
+            R = R + int(data['away_batting'][i]['r'])
+            H = H + int(data['away_batting'][i]['h'])
+            RBI = RBI + int(data['away_batting'][i]['rbi'])
+            BB = BB + int(data['away_batting'][i]['bb'])
+            SO = SO + int(data['away_batting'][i]['so'])
+            LOB = LOB + int(data['away_batting'][i]['lob'])
 
             i = i + 1
     

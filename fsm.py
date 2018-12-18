@@ -646,12 +646,12 @@ class TocMachine(GraphMachine):
         buttons = [{
             'type' : 'postback',
             'title' : 'Home Team Pitcher',
-            'payload' : 'pitcher'
+            'payload' : 'H_pitcher'
             },
             {
             'type' : 'postback',
             'title' : 'Home Team Hitter',
-            'payload' : 'hitter'
+            'payload' : 'H_hitter'
             }]
         responese = send_button_message(sender_id, "Select to view the HOME TEAM Pitcher box or Hitter box", buttons)
 
@@ -670,12 +670,12 @@ class TocMachine(GraphMachine):
         buttons = [{
             'type' : 'postback',
             'title' : 'Away Team Pitcher',
-            'payload' : 'pitcher'
+            'payload' : 'A_pitcher'
             },
             {
             'type' : 'postback',
             'title' : 'Away Team Hitter',
-            'payload' : 'hitter'
+            'payload' : 'A_hitter'
             }]
         responese = send_button_message(sender_id, "Select to view the AWAY TEAM Pitcher or Hitter box", buttons)
 
@@ -687,7 +687,7 @@ class TocMachine(GraphMachine):
         if event.get("postback"):
             if event['postback'].get('payload'):
                 payload = event['postback']['payload']
-                return payload == 'pitcher'
+                return payload == 'H_pitcher'
         return False
 
     def on_enter_homePitcher(self, event):
@@ -708,7 +708,7 @@ class TocMachine(GraphMachine):
         if event.get("postback"):
             if event['postback'].get('payload'):
                 payload = event['postback']['payload']
-                return payload == 'hitter'
+                return payload == 'H_hitter'
         return False
 
     def on_enter_homeHitter(self, event):
@@ -732,7 +732,7 @@ class TocMachine(GraphMachine):
         if event.get("postback"):
             if event['postback'].get('payload'):
                 payload = event['postback']['payload']
-                return payload == 'pitcher'
+                return payload == 'A_pitcher'
         return False
 
     def on_enter_awayPitcher(self, event):
@@ -754,7 +754,7 @@ class TocMachine(GraphMachine):
         if event.get("postback"):
             if event['postback'].get('payload'):
                 payload = event['postback']['payload']
-                return payload == 'hitter'
+                return payload == 'A_hitter'
         return False
 
     def on_enter_awayHitter(self, event):
