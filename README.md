@@ -51,14 +51,15 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 	    * Input: "hi"
         * state: Description
     		* Reply: "Welcome to my Baseball Chatbot"
-                     "(1) If you want to get the result of the game in a day you choose :"
-                     "Please enter 'game'"
-                     "(2) If you want to get the players performance which is at the day you choose"
-                     "Please enter 'box'"
-                     "(3) If you want to go to the official site and get ball team logo"
-                     "Please enter 'team'"
-                     "back to user and getting start by enter :"
-                     "'game', 'box', 'team'"
+
+                    1.If you want to get the result of the game in a day you choose :
+                    Please enter 'game'
+                    2.If you want to get the players performance which is at the day you choose
+                    Please enter 'box'
+                    3.If you want to go to the official site and get ball team logo
+                    Please enter 'team'
+                    back to user and getting start by enter :
+                    'game', 'box', 'team'
 
     * 2.這個sequence可以輸入一個日期(例:2018 10 23)就可以查詢當天所有比賽的成績,接下來輸入其中一隊的主隊隊名,就可以得到該場比賽的記分板
         接下來可以輸入"pitcher" 可以得到該場比賽的勝投與敗投
@@ -95,8 +96,8 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 
                      例:
                     Inning	1	2	3	4	5	6	7	8	9	F
-                    Away	0	1	1	0	1	0	1	0	0	4
-                    Home	2	0	1	0	2	0	3	0	0	8
+                    Away	    0	1	1	0	1	0	1	0	0	4
+                    Home	    2	0	1	0	2	0	3	0	0	8
                      
                      "if you want to view win/lose pitcher :"
                      "please enter 'pitcher'"
