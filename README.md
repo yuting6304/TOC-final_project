@@ -95,10 +95,10 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      "this is the scoreboard of a team you choose :"
 
                      例:
-                    Inning	1	2	3	4	5	6	7	8	9	F
+                    Inning 	    1	2	3	4	5	6	7	8	9	F
                     Away	    0	1	1	0	1	0	1	0	0	4
                     Home	    2	0	1	0	2	0	3	0	0	8
-                     
+
                      "if you want to view win/lose pitcher :"
                      "please enter 'pitcher'"
                      "And if you want to view the home team player list :"
