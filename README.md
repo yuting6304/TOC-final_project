@@ -201,12 +201,15 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      and has two button to choose "Home Team" or "Away Team"
         * Input: button "Home Team" or "Away Team"
         * state: homeTeam or awayTeam
-            * Reply: "例: Select to view the HOME TEAM Pitcher box or Hitter box" (because of clicking button "Home Team")
+            * Reply: 
+                     "例: Select to view the HOME TEAM Pitcher box or Hitter box" (because of clicking button "Home Team")
                      and has two button to choose "Home Team Pitcher" or "Home Team Hitter"
+        
         * Input: button "Home Team Pitcher" or "Home Team Hitter" or "Away Team Pitcher" or "Away Team Hitter"
         * state: homePitcher, awayPitcher, homeHitter, awayHitter
             * Reply: 
                      例: (because of clicking button "Home Team Pitcher")
+                     
                      Red Sox's Pitcher :
                      Chris Sale :
                      IP	    H	R	ER	BB	SO	HR	ERA
