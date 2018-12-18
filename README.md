@@ -94,9 +94,9 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      "this is the scoreboard of a team you choose :"
 
                      例:
-                     inning 1	2	3	4	5	6	7	8	9	F
-                     Away	  0	1	1	0	1	0	1	0	0	4
-                     Home    2	0	1	0	2	0	3	0	0	8
+                    Inning	1	2	3	4	5	6	7	8	9	F
+                    Away	0	1	1	0	1	0	1	0	0	4
+                    Home	2	0	1	0	2	0	3	0	0	8
                      
                      "if you want to view win/lose pitcher :"
                      "please enter 'pitcher'"
@@ -165,9 +165,9 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      and has three button
                      
 
-                     1. go to Official Site                      => 可以連結到該輸入球隊的官網
-                     2. MLB Official Site                        => 可以連結到MLB的官網
-                     3. get Logo and back(go to state "Logo")    => 接收到該球隊的Logo image and go back to user state
+                    1. go to Official Site                      => 可以連結到該輸入球隊的官網
+                    2. MLB Official Site                        => 可以連結到MLB的官網
+                    3. get Logo and back(go to state "Logo")    => 接收到該球隊的Logo image and go back to user state
                         -------->  此步即結束此sequence,回到user state
 
 
@@ -213,30 +213,30 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
             * Reply: 
                      例: (because of clicking button "Home Team Pitcher")
                      
-                     Red Sox's Pitcher :
-                     Chris Sale :
-                     IP	  H	R	ER	BB	SO	HR	ERA
-                     4.0  5	3	3	2	7	1	6.75
-                     Matt Barnes :
-                     IP	  H	R	ER	BB	SO	HR	ERA
-                     1.0  1	0	0	0	1	0	0.00
-                     Joe Kelly :
-                     IP	  H	R	ER	BB	SO	HR	ERA
-                     1.0  0	0	0	0	2	0	0.00
-                     Ryan Brasier :
-                     IP	  H	R	ER	BB	SO	HR	ERA
-                     0.2  2	1	1	1	0	0	13.50
-                     Eduardo Rodriguez :
-                     IP	  H	R	ER	BB	SO	HR	ERA
-                     0.1  0	0	0	0	0	0	0.00
-                     Nathan Eovaldi :
-                     IP	  H	R	ER	BB	SO	HR	ERA
-                     1.0  0	0	0	0	0	0	0.00
-                     Craig Kimbrel :
-                     IP	  H	R	ER	BB	SO	HR	ERA
-                     1.0  0	0	0	0	2	0	0.00
-                     total :
-                     IP	  H	R	ER	BB	SO	HR
-                     9.0  8	4	4	3	12	1
+                    Red Sox's Pitcher :
+                    Chris Sale :
+                    IP	H	R	ER	BB	SO	HR	ERA
+                    4.0	5	3	3	2	7	1	6.75
+                    Matt Barnes :
+                    IP	H	R	ER	BB	SO	HR	ERA
+                    1.0	1	0	0	0	1	0	0.00
+                    Joe Kelly :
+                    IP	H	R	ER	BB	SO	HR	ERA
+                    1.0	0	0	0	0	2	0	0.00
+                    Ryan Brasier :
+                    IP	H	R	ER	BB	SO	HR	ERA
+                    0.2	2	1	1	1	0	0	13.50
+                    Eduardo Rodriguez :
+                    IP	H	R	ER	BB	SO	HR	ERA
+                    0.1	0	0	0	0	0	0	0.00
+                    Nathan Eovaldi :
+                    IP	H	R	ER	BB	SO	HR	ERA
+                    1.0	0	0	0	0	0	0	0.00
+                    Craig Kimbrel :
+                    IP	H	R	ER	BB	SO	HR	ERA
+                    1.0	0	0	0	0	2	0	0.00
+                    total :
+                    IP	H	R	ER	BB	SO	HR
+                    9.0	8	4	4	3	12	1
 
                      "thanks for using"     -------->  此步即結束此sequence,回到user state
