@@ -39,12 +39,12 @@ The initial state is set to `user`.
 
 Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
 
-
-第一個sequence : 簡單介紹其他三個sequence的功能
-第二個sequence : 查詢指定日期的比賽成績
-第三個sequence : 獲得MLB官網,球隊官網,球隊logo
-第四個sequence : 查詢指定日期的選手表現數據
-
+```sh
+第一個sequence : 簡單介紹其他三個sequence的功能     input : hi
+第二個sequence : 查詢指定日期的比賽成績             input : game
+第三個sequence : 獲得MLB官網,球隊官網,球隊logo      input : team
+第四個sequence : 查詢指定日期的選手表現數據          input : box
+```
 
 * user
     * 1.這個sequence是用來簡單解釋以下三種input可以得到的功能
