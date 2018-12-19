@@ -53,7 +53,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 	    * Input: "hi"
         * state: Description
     		* Reply: 
-```
+```sh
                     Welcome to my Baseball Chatbot
 
                     1.If you want to get the result of the game in a day you choose :
@@ -73,7 +73,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 	    * Input: "game"
         * state : Game
 		    * Reply: 
-```
+```sh
                      Game Score mode :
                      Please enter the day and follow the following rules to get the ball games result at your enter day :
                      years from 2005 ~ 2018
