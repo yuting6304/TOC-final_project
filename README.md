@@ -68,8 +68,8 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
         * state : Game
 		    * Reply: "Game Score mode :"
                      "Please enter the day and follow the following rules to get the ball games result at your enter day :"
-                     "years from 2005~2018"
-                     "month from 3~11"
+                     "years from 2005 to 2018"
+                     "month from 3 to 11"
                      "(format : xxxx xx xx)"
         * Input: "例如 : 2018 10 23"
         * state : allScore
