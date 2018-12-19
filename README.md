@@ -53,7 +53,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 	    * Input: "hi"
         * state: Description
     		* Reply: 
-                    ```sh
+```sh
                     Welcome to my Baseball Chatbot
 
                     1.If you want to get the result of the game in a day you choose :
@@ -64,7 +64,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                     Please enter 'team'
                     back to user and getting start by enter :
                     'game', 'box', 'team'
-                    ```
+```
 
 
     * 2.這個sequence可以輸入一個日期(例:2018 10 23)就可以查詢當天所有比賽的成績,接下來輸入其中一隊的主隊隊名,就可以得到該場比賽的記分板
@@ -73,17 +73,17 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 	    * Input: "game"
         * state : Game
 		    * Reply: 
-                     ```sh
+```sh
                      Game Score mode :
                      Please enter the day and follow the following rules to get the ball games result at your enter day :
                      years from 2005 ~ 2018
                      month from 3 ~ 11
                      (format : xxxx xx xx)
-                     ```
+```
         * Input: "例如 : 2018 10 23"
         * state : allScore
             * reply: 
-                     ```sh
+```sh
                      輸入日期格式錯誤或該日期沒有比賽:
                      your chosen day had no game
                      please enter another day again!
@@ -95,12 +95,12 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      Dodgers (4) at Red Sox (8) => (客隊 (比數) at 主隊 (比數))
                     
                      Please enter the name of home team(the rear team show as above result) to get the game scoreboard :
-                     ```
+```
 
         * Input: "例如 : Red Sox" (需要輸入的隊伍名稱為上面比賽結果中的主隊"Red Sox")
         * state : scoreBoard
             * Reply: 
-                     ```sh
+```sh
                      若輸入的隊伍名稱不是主隊或隊伍名稱錯誤：
                      your entered home team name is false
                      please reenter again!
@@ -119,12 +119,12 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      please enter 'pitcher'
                      And if you want to view the home team player list :
                      please enter 'player'
-                     ```
+```
 
             * Input: "pitcher"
             * state: Pitcher
                 * Reply: 
-                         ```sh
+```sh
                          Game Score mode :
                          This is the game's win/lose pitcher :
 
@@ -133,12 +133,12 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                          Losing Pitcher: Clayton Kershaw (Dodgers)
 
                          Thanks for using   -------->  此步即結束此sequence,回到user state
-                         ```
+```
 
             * Input: "player"
             * state: Player
                 * Reply: 
-                         ```sh
+```sh
                          Game Score mode :
                          This is the home team's player list :
 
@@ -163,29 +163,29 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                          Craig Kimbrel (P)
 
                          Thanks for using   -------->  此步即結束此sequence,回到user state
-                         ```
+```
 
     * 3.這個sequence是用來查詢球隊資料,最後可獲得球隊logo or MLB官網 or 各球隊的官網
         * Input: "team"
         * state: Team
             * Reply: 
-                     ```sh
+```sh
                      choose AL or NL to see the league of team
                      and has two button to choose "AL" or "NL"
-                     ```
+```
 
         * Input: button "AL" or "NL"
         * state: AL or NL
             * Reply: 
-                     ```sh
+```sh
                      choose the region of your team in AL or NL
                      and has three button to choose "WEST" or "CENTRAL" or "EAST"
-                     ```
+```
 
         * Input: button "WEST" or "CENTRAL" or "EAST"
         * state: AL_W or AL_C or AL_E or NL_W or NL_C or NL_E
             * Reply: 
-                     ```sh
+```sh
                      例:
                         Enter the team you want to see :
                         Angels
@@ -193,12 +193,12 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                         Rangers
                         Mariners
                         Athletics
-                     ```
+```
         
         * Input: "例如 : Astros"
         * state: NL_T or AL_T
             * Reply: 
-                    ```sh
+```sh
                      choose the one to get next(Official Site or Logo)
                      and has three button
                      
@@ -207,26 +207,26 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                     2. MLB Official Site                        => 可以連結到MLB的官網
                     3. get Logo and back(go to state "Logo")    => 接收到該球隊的Logo image and go back to user state
                         -------->  此步即結束此sequence,回到user state
-                    ```
+```
 
 
     * 4.這個sequence是用來查詢某天比賽,主客場球隊的投手或打者的詳細比賽數據
         * Input: "box"
         * state: Gamebox
             * Reply: 
-                     ```sh
+```sh
                      welcome to use my MLB GANE chatbot
                      Game Box mode :
                      Please enter the day and follow the following rules to get the ball games result at your enter day :
                      years from 2005~2018
                      month from 3~11
                      (format : xxxx xx xx)
-                     ```
+```
 
         * Input: "例如 : 2018 10 23"
         * state: allScorebox
             * Reply: 
-                     ```sh
+```sh
                      輸入日期格式錯誤或該日期沒有比賽:
                      your chosen day had no game
                      please enter another day again!
@@ -238,12 +238,12 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      Dodgers (4) at Red Sox (8) => (客隊 (比數) at 主隊 (比數))
 
                      Please enter the name of home team(the rear team show as above result) to get the game scoreboard :
-                     ```
+```
 
         * Input: "例如 : Red Sox" (需要輸入的隊伍名稱為上面比賽結果中的主隊"Red Sox")
         * state： scoreBoardbox
             * Reply: 
-                     ```sh
+```sh
                      若輸入的隊伍名稱不是主隊或隊伍名稱錯誤：
                      your entered home team name is false
                      please reenter again!
@@ -251,20 +251,20 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                      若輸入的隊伍名字是主隊且正確:
                      Choose Home team or Away team to view players box:
                      and has two button to choose "Home Team" or "Away Team"
-                     ```
+```
 
         * Input: button "Home Team" or "Away Team"
         * state: homeTeam or awayTeam
-            * Reply: 
-                     ```sh
+            * Reply:
+```sh
                      例: Select to view the HOME TEAM Pitcher box or Hitter box (because of clicking button "Home Team")
                      and has two button to choose "Home Team Pitcher" or "Home Team Hitter"
-                     ```
+```
         
         * Input: button "Home Team Pitcher" or "Home Team Hitter" or "Away Team Pitcher" or "Away Team Hitter"
         * state: homePitcher, awayPitcher, homeHitter, awayHitter
             * Reply: 
-                    ```sh
+```sh
                     例: (because of clicking button "Home Team Pitcher")
                      
                     Red Sox's Pitcher :
@@ -294,4 +294,4 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                     9.0	8	4	4	3	12	1
 
                     thanks for using     -------->  此步即結束此sequence,回到user state
-                    ```
+```
