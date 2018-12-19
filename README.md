@@ -53,7 +53,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 	    * Input: "hi"
         * state: Description
     		* Reply: 
-```sh
+                    ```sh
                     Welcome to my Baseball Chatbot
 
                     1.If you want to get the result of the game in a day you choose :
@@ -64,7 +64,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
                     Please enter 'team'
                     back to user and getting start by enter :
                     'game', 'box', 'team'
-```
+                    ```
 
 
     * 2.這個sequence可以輸入一個日期(例:2018 10 23)就可以查詢當天所有比賽的成績,接下來輸入其中一隊的主隊隊名,就可以得到該場比賽的記分板
@@ -73,13 +73,13 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 	    * Input: "game"
         * state : Game
 		    * Reply: 
-```sh
+                    ```sh
                      Game Score mode :
                      Please enter the day and follow the following rules to get the ball games result at your enter day :
                      years from 2005 ~ 2018
                      month from 3 ~ 11
                      (format : xxxx xx xx)
-```
+                    ```
         * Input: "例如 : 2018 10 23"
         * state : allScore
             * reply: 
